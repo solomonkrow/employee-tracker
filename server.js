@@ -1,13 +1,13 @@
 // const exp = require('constants');
 const express = require('express');
-const mysql = require('mysql2');
+// const mysql = require('mysql2');
 const PORT = process.env.PORT || 3001;
 const app = express();
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-const db = mysql.createConnection(
+/* const db = mysql.createConnection(
     {
         host: 'localhost',
         user: 'root',
@@ -15,13 +15,13 @@ const db = mysql.createConnection(
         database: 'employee_db'
     },
     console.log('Connection to Employee Database (employee_db) established')
-);
+); */
 
 // departent data
 /* app.get('', (req, res) => {
     const sql = 
 }) */
-db.query('SELECT * FROM department', (err, results)=> {console.log(results);})
+// db.query('SELECT * FROM department', (err, results)=> {console.log(results);})
 
 // role data
 // SELECT * FROM roles
@@ -40,4 +40,4 @@ app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
 
-module.exports = {db };
+module.exports = {app};
