@@ -24,6 +24,7 @@ Open intergrated terminal, type 'node index.js' hit enter, will be given list pr
 
 Video below showing use case:
 
+[Employee Tracker Usage](https://drive.google.com/file/d/13k7SjDbNHWFiEhaOIPTj1Fk1jtwZ1aY-/view)
 
 ## Credits
 
